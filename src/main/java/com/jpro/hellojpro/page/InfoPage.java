@@ -1,7 +1,6 @@
 package com.jpro.hellojpro.page;
 
 import com.jpro.web.View;
-import com.jpro.webapi.WebAPI;
 import com.sandec.mdfx.MarkdownView;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
@@ -37,7 +36,7 @@ public class InfoPage extends View {
 
         String readmeStr = "";
         try {
-            readmeStr = IOUtils.toString(readmeFile.toURI()   , "utf-8");
+            readmeStr = IOUtils.toString(readmeFile.toURI(), "utf-8");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
